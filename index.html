@@ -1,523 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="   https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="mystyle.css" />
-    <link rel="stylesheet" href="style.css" />
+    <head>
+        <link rel="stylesheet" href="   https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+        <link rel="stylesheet" href="mystyle.css"/>
+        <link rel="stylesheet" href="style.css"/>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div class="loaderholder">
-      <div class="loader">
-        <div class="inner one"></div>
-        <div class="inner two"></div>
-        <div class="inner three"></div>
-      </div>
-    </div>
-    <div class="overlay"></div>
-    <!-- --------------Navbar----------------------------- -->
-    <nav id="top" class="navbar">
-      <div class="container">
-        <div class="nav-wrapper">
-          <div class="left">
-            <input type="checkbox" class="checkbox" />
-            <div data-aos="fade-down" data-aos-delay="300" class="hamburger">
-              <div class="child"></div>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Vivek Patel</title>
+    </head>
+    <body>
+        <div class="loaderholder">
+            <div class="loader">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
             </div>
-            <div class="sidenav">
-              <ul>
-                <li>
-                  <a class="closeSideNav" href="#about">About</a>
-                </li>
-                <li>
-                  <a class="closeSideNav" href="#work">Work</a>
-                </li>
-                <li>
-                  <a class="closeSideNav" href="#contact">Contact</a>
-                </li>
-                <li>
-                  <!-- Below put your own resume link,or just fill your information in the given link... -->
-                  <a
-                    class="closeSideNav button"
-                    href="https://docs.google.com/document/d/1cDSInadltq4nYs2RzJsSZKM82VhC6TuT3DOy83nLdPo/edit#"
-                    >Resume</a
-                  >
-                </li>
-              </ul>
+        </div>
+        <div class="overlay"></div>
+        <!-- --------------Navbar----------------------------- -->
+        <nav id="top" class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="left">
+                        <input type="checkbox" class="checkbox"/>
+                        <div data-aos="fade-down" data-aos-delay="300" class="hamburger">
+                            <div class="child"></div>
+                        </div>
+                        <div class="sidenav">
+                            <ul>
+                                <li>
+                                    <a class="closeSideNav" href="#about">About</a>
+                                </li>
+                                <li>
+                                    <a class="closeSideNav" href="#work">Work</a>
+                                </li>
+                                <li>
+                                    <a class="closeSideNav" href="#contact">Contact</a>
+                                </li>
+                                <li>
+                                    <!-- Below put your own resume link,or just fill your information in the given link... -->
+                                    <a class="closeSideNav button" href="https://docs.google.com/document/d/1cDSInadltq4nYs2RzJsSZKM82VhC6TuT3DOy83nLdPo/edit#">Resume</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li class="down" data-aos="fade-down">
+                                <a href="#about">About</a>
+                            </li>
+                            <li class="down" data-aos="fade-down" data-aos-delay="200">
+                                <a href="#work">Work</a>
+                            </li>
+                            <li class="down" data-aos="fade-down" data-aos-delay="400">
+                                <a href="#contact">Contact</a>
+                            </li>
+                            <li
+                                class="down" data-aos="fade-down" data-aos-delay="600">
+                                <!-- Below put your own resume link,or just fill your information in the given link... -->
+                                <a class="button resume" href="https://docs.google.com/document/d/1cDSInadltq4nYs2RzJsSZKM82VhC6TuT3DOy83nLdPo/edit#">Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="right">
+        </nav>
+
+        <!---------------------------- Header--------------------->
+        <div style="margin-top: 50px;"></div>
+        <header>
+            <div class="container">
+                <div class="header down">
+                    <p data-aos="fade-zoom-in" data-aos-delay="2400" class="small info grey p para">
+                        Hi , my name is
+                    </p>
+                    <p
+                        data-aos="fade-zoom-in" data-aos-delay="2400" style="color: rgb(215, 215, 241);" class="x-large info fw-600">
+                        Vivek Patel
+                    </p>
+                    <script>var TxtRotate = function(el, toRotate, period) {
+                      this.toRotate = toRotate;
+                      this.el = el;
+                      this.loopNum = 0;
+                      this.period = parseInt(period, 10) || 2000;
+                      this.txt = '';
+                      this.tick();
+                      this.isDeleting = false;
+                    };
+                    
+                    TxtRotate.prototype.tick = function() {
+                      var i = this.loopNum % this.toRotate.length;
+                      var fullTxt = this.toRotate[i];
+                    
+                      if (this.isDeleting) {
+                        this.txt = fullTxt.substring(0, this.txt.length - 1);
+                      } else {
+                        this.txt = fullTxt.substring(0, this.txt.length + 1);
+                      }
+                    
+                      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+                    
+                      var that = this;
+                      var delta = 300 - Math.random() * 100;
+                    
+                      if (this.isDeleting) { delta /= 2; }
+                    
+                      if (!this.isDeleting && this.txt === fullTxt) {
+                        delta = this.period;
+                        this.isDeleting = true;
+                      } else if (this.isDeleting && this.txt === '') {
+                        this.isDeleting = false;
+                        this.loopNum++;
+                        delta = 50;
+                      }
+                    
+                      setTimeout(function() {
+                        that.tick();
+                      }, delta);
+                    };
+                    
+                    window.onload = function() {
+                      var elements = document.getElementsByClassName('txt-rotate');
+                      for (var i=0; i<elements.length; i++) {
+                        var toRotate = elements[i].getAttribute('data-rotate');
+                        var period = elements[i].getAttribute('data-period');
+                        if (toRotate) {
+                          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                        }
+                      }
+                      // INJECT CSS
+                      var css = document.createElement("style");
+                      css.type = "text/css";
+                      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+                      document.body.appendChild(css);
+                    };</script>
+
+                    <h1
+                        data-aos="fade-zoom-in" data-aos-delay="2400" class="x-large info my-1 fw-600 blue">
+                        <!-- Your specifiaction here,like front end or backend devolper -->
+                        I am <span
+                        class="txt-rotate"
+                        data-period="2000"
+                        data-rotate='[ "Data Scientist","Pythoneer", "Web Developer"]'></span>
+                    </h1>
+                    <!-- Give your own email id here in href attribute -->
+                    <a data-aos="fade-zoom-in" data-aos-delay="3000" class="button info-btn my-1" href="mailto:ai20.vivek.patel@gmail.com">Get In Touch</a>
+                </div>
+            </div>
+        </header>
+        <!-- -----------------Aside----------------------------->
+        <aside class="data-side" data-aos="fade-zoom-in" data-aos-delay="1200">
             <ul>
-              <li class="down" data-aos="fade-down">
-                <a href="#about">About</a>
-              </li>
-              <li class="down" data-aos="fade-down" data-aos-delay="200">
-                <a href="#work">Work</a>
-              </li>
-              <li class="down" data-aos="fade-down" data-aos-delay="400">
-                <a href="#contact">Contact</a>
-              </li>
-              <li class="down" data-aos="fade-down" data-aos-delay="600">
-                <!-- Below put your own resume link,or just fill your information in the given link... -->
-                <a
-                  class="button resume"
-                  href="https://docs.google.com/document/d/1cDSInadltq4nYs2RzJsSZKM82VhC6TuT3DOy83nLdPo/edit#"
-                  >Resume</a
-                >
-              </li>
+                <li
+                    class="data-side" data-aos="fade-left" data-aos-delay="1400">
+                    <!-- Add the link to your social media account.  -->
+                    <a
+                        href="#!">
+                        <!-- Get the social media icon and paste here. -->
+                        <i class="fab fa-facebook medium"></i>
+                    </a>
+                </li>
+                <li class="data-side" data-aos="fade-left" data-aos-delay="1600">
+                    <a href="#!">
+                        <i class="fab fa-github medium"></i>
+                    </a>
+                </li>
+                <li class="data-side" data-aos="fade-left" data-aos-delay="1700">
+                    <a href="#!">
+                        <i class="fab fa-twitter medium"></i>
+                    </a>
+                </li>
+                <li class="data-side" data-aos="fade-left" data-aos-delay="1900">
+                    <a href="#!">
+                        <i class="fab fa-instagram medium"></i>
+                    </a>
+                </li>
+                <li class="v-holder data-side">
+                    <div class="line"></div>
+                </li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
+        </aside>
+        <!-------------------About------------------------------>
+        <section id="about" class="about">
+            <div class="container">
+                <div style="margin-bottom: 80px;"></div>
+                <div class="heading my-2">
+                    <div class="text">
+                        <p class="large fw-600 grey">About me</p>
+                    </div>
+                    <div class="h-holder">
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="grid-2-about">
+                    <div
+                        data-aos-offset="300" data-aos="fade-right" class="gallery">
+                        <!-- Provide  link to your github profile inside href attribute -->
+                        <a href="#!">
+                            <div class="imgoverlay"></div>
+                            <!-- Your Image Here -->
+                            <img src="ai.jpg" class="" alt=""/></a>
+                    </div>
+                    <div data-aos-offset="300" data-aos="fade-left" class="content px">
+                        <p
+                            class="small grey text-left">
+                            <!-- Your mesg for recruiter here -->
+                            Completed 1,800+ Data science Exercises Problems on <u><a href="https://www.datacamp.com/profile/vivekcodes" >datacamp</a></u>.
+                        </p>
+                        <p class="small grey text-left my-1">
+                          I am proficient in python and Fast Learner have built Games, Web Scrappers , Web sites and more.
+                      </p>
+                      
+                        
+                      <p class="small grey text-left my-1">
+                        I Write Technical Blogs on Python and Data science , Some of my blogs has more than 2000+ readers.
+                    </p> <p class="small grey text-left my-1">
+                    I've also Knowladge of Cloud Computing and has exceptional development ability and extensive knowledge of programming in shell script.
+                  </p> 
+                    
+                      
+                      
+                      <p class="small grey text-left my-1">
+                            Here are a few technologies I've been working with recently ,
+                        </p>
 
-    <!---------------------------- Header--------------------->
-    <div style="margin-top: 50px;"></div>
-    <header>
-      <div class="container">
-        <div class="header down">
-          <p
-            data-aos="fade-zoom-in"
-            data-aos-delay="2400"
-            class="small info grey p para"
-          >
-            Hi , my name is
-          </p>
-          <p
-            data-aos="fade-zoom-in"
-            data-aos-delay="2400"
-            style="color: rgb(215, 215, 241);"
-            class="x-large info fw-600"
-          >
-            <!-- Your name here -->
-            John Doe
-          </p>
-          <h1
-            data-aos="fade-zoom-in"
-            data-aos-delay="2400"
-            class="x-large info my-1 fw-600 blue"
-          >
-            <!-- Your specifiaction here,like front end or backend devolper -->
-            I am a web devloper.
-          </h1>
-          <!-- Give your own email id here in href attribute -->
-          <a
-            data-aos="fade-zoom-in"
-            data-aos-delay="3000"
-            class="button info-btn my-1"
-            href="mailto:abc@gmail.com"
-            >Get In Touch</a
-          >
-        </div>
-      </div>
-    </header>
-    <!-- -----------------Aside----------------------------->
-    <aside class="data-side" data-aos="fade-zoom-in" data-aos-delay="1200">
-      <ul>
-        <li class="data-side" data-aos="fade-left" data-aos-delay="1400">
-          <!-- Add the link to your social media account.  -->
-          <a href="#!">
-            <!-- Get the social media icon and paste here. -->
-            <i class="fab fa-facebook medium"></i
-          ></a>
-        </li>
-        <li class="data-side" data-aos="fade-left" data-aos-delay="1600">
-          <a href="#!"><i class="fab fa-github medium"></i></a>
-        </li>
-        <li class="data-side" data-aos="fade-left" data-aos-delay="1700">
-          <a href="#!"><i class="fab fa-twitter medium"></i></a>
-        </li>
-        <li class="data-side" data-aos="fade-left" data-aos-delay="1900">
-          <a href="#!"><i class="fab fa-instagram medium"></i></a>
-        </li>
-        <li class="v-holder data-side">
-          <div class="line"></div>
-        </li>
-      </ul>
-    </aside>
-    <!-------------------About------------------------------>
-    <section id="about" class="about">
-      <div class="container">
-        <div style="margin-bottom: 80px;"></div>
-        <div class="heading my-2">
-          <div class="text">
-            <p class="large fw-600 grey">About me</p>
-          </div>
-          <div class="h-holder"><div class="line"></div></div>
-        </div>
-        <div class="grid-2-about">
-          <div data-aos-offset="300" data-aos="fade-right" class="gallery">
-            <!-- Provide  link to your github profile inside href attribute -->
-            <a href="#!">
-              <div class="imgoverlay"></div>
-              <!-- Your Image Here -->
-              <img src="ai.jpg" class="" alt=""
-            /></a>
-          </div>
-          <div data-aos-offset="300" data-aos="fade-left" class="content px">
-            <p class="small grey text-left">
-              <!-- Your mesg for recruiter here -->
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-              error enim quidem mollitia eligendi, voluptas minus consequuntur
-              eaque maiores deleniti. Provident quasi, vitae distinctio
-              asperiores libero ullam harum molestiae debitis quas?
-            </p>
-            <p class="small grey text-left my-1">
-              Here are a few technologies I've been working with recently ,
-            </p>
-
-            <div class="skills">
-              <ul class="languages grid-6-about">
-                <p class="small grey text-left my-1">
-                  Languages & <br />
-                  Frameworks:
+                        <div class="skills">
+                            <ul class="languages grid-6-about">
+                                <p class="small grey text-left my-1">
+                                    Languages &
+                                    <br/>
+                                    Frameworks:
+                                </p>
+                                <!-- Give the name of language/framework you have learned.You can add as much as names you want just wrap that whole inside the li tag,and give the icon -->
+                                <li>
+                                    <i class="fas fa-angle-right"></i>Pywebio</li>
+                                <li>
+                                    <i class="fas fa-angle-right"></i>Selenium</li>
+                                <li>
+                                    <i class="fas fa-angle-right"></i>Pandas</li>
+                            </ul>
+                            <ul class="tools grid-6-about">
+                                <p class="small grey my-1 text-left">
+                                    Tools &
+                                    <br/>
+                                    Platforms:
+                                </p>
+                                <!-- Give the name of language/framework you have learned  -->
+                                <li>
+                                    <i class="fas fa-angle-right"></i>Jupyter Lab</li>
+                                <li>
+                                    <i class="fas fa-angle-right"></i>Spyder</li>
+                                <li>
+                                    <i class="fas fa-angle-right"></i>BlazingSQL Notebooks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------Work Section------------------------------ -->
+        <section id="work" class="work my-2">
+            <div class="container">
+                <div style="margin-bottom: 80px;"></div>
+                <div class="heading my-3">
+                    <div class="text">
+                        <p class="large grey fw-600">
+                            My work
+                        </p>
+                    </div>
+                    <div class="h-holder">
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <p
+                    data-aos="fade-right" data-aos-offset="300" class="medium fw-600 text-left">
+                    <!-- Project name -->
+                    Project Name
                 </p>
-                <!-- Give the name of language/framework you have learned.You can add as much as names you want just wrap that whole inside the li tag,and give the icon -->
-                <li><i class="fas fa-angle-right"></i>Tech 1</li>
-                <li><i class="fas fa-angle-right"></i>Tech 2</li>
-                <li><i class="fas fa-angle-right"></i>Tech 3</li>
-              </ul>
-              <ul class="tools grid-6-about">
-                <p class="small grey my-1 text-left">
-                  Tools & <br />
-                  Platforms:
+                <div data-aos="fade-right" data-aos-offset="300" class="grid-2-work my-1">
+                    <div class="project-data">
+                        <p
+                            data-aos="fade-right" data-aos-offset="300" class="small grey text-left my">
+                            <!-- Project description in short -->
+                            Project Description
+                        </p>
+                        <ul class="my-2">
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span
+                                    class="small grey text-left my">
+                                    <!-- Technology used to make project -->
+                                    Lorem.
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span
+                                    class="small grey text-left my">
+                                    <!-- Technology used to make project -->
+                                    Lorem, ipsum.
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span
+                                    class="small grey text-left my">
+                                    <!-- Technology used to make project -->
+                                    Lorem ipsum dolor sit.
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span
+                                    class="small grey text-left my">
+                                    <!-- Technology used to make project -->
+                                    Lorem, ipsum.
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span
+                                    class="small grey text-left my">
+                                    <!-- Technology used to make project -->
+                                    Lorem, ipsum dolor.
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span class="small grey text-left my">
+                                    Lorem ipsum dolor sit.
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span
+                                    class="small grey text-left my">
+                                    <!-- Technology used to make project -->
+                                    Lorem ipsum dolor sit amet.
+                                </span>
+                            </li>
+                        </ul>
+                        <div
+                            class="links">
+                            <!-- Give a linkt to your project repository -->
+                            <a target="_blank" class="button btn" href="#!">
+                                Code</a>
+                            <!-- Givethe link tp your live project -->
+                            <a target="_blank" class="button btn" href="#!">
+                                Demo</a>
+                        </div>
+                    </div>
+                    <div
+                        data-tilt data-tilt-max="5" class="project-img">
+                        <!-- Link to deployed Project -->
+                        <a
+                            href="#!">
+                            <!-- Image of your Project -->
+                            <img src="pro1.jpg" alt=""/></a>
+                    </div>
+                </div>
+                <p data-aos="fade-left" data-aos-offset="300" class="medium fw-600 text-left">
+                    Project 2
                 </p>
-                <!-- Give the name of language/framework you have learned  -->
-                <li><i class="fas fa-angle-right"></i>Tool 1</li>
-                <li><i class="fas fa-angle-right"></i>Tool 2</li>
-                <li><i class="fas fa-angle-right"></i>Tool 3</li>
-              </ul>
+                <div data-aos="fade-left" data-aos-offset="400" class="grid-2-work my-1">
+                    <div class="project-data">
+                        <p data-aos="fade-left" data-aos-offset="400" class="small grey text-left my">
+                            Project Name
+                        </p>
+                        <ul class="my-2">
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span class="small grey text-left my">
+                                    Lorem.
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span class="small grey text-left my">
+                                    Lorem, ipsum.
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span class="small grey text-left my">
+                                    Lorem ipsum dolor sit.
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span class="small grey text-left my">
+                                    Lorem, ipsum.
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span class="small grey text-left my">
+                                    Lorem, ipsum dolor.
+                                </span>
+                            </li>
+                        </ul>
+                        <div
+                            class="links">
+                            <!-- Give a linkt to your project repository -->
+                            <a target="_blank" class="button btn" href="#!">
+                                Code</a>
+                            <!-- Givethe link tp your live project -->
+                            <a target="_blank" class="button btn" href="#!">
+                                Demo</a>
+                        </div>
+                    </div>
+                    <div
+                        data-tilt data-tilt-max="5" class="project-img">
+                        <!-- Link to deployed Project -->
+                        <a
+                            href="#!">
+                            <!-- Image of your Project -->
+                            <img src="pro2.png" alt=""/></a>
+                    </div>
+                </div>
+                <p data-aos="fade-right" data-aos-offset="300" class="medium fw-600 text-left">
+                    Project 3
+                </p>
+                <div data-aos="fade-right" data-aos-offset="400" class="grid-2-work my-1">
+                    <div class="project-data">
+                        <p data-aos="fade-right" data-aos-offset="400" class="small grey text-left">
+                            Project Name
+                        </p>
+                        <ul class="my-1">
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span class="small grey text-left my">
+                                    Lorem.
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span class="small grey text-left my">
+                                    Lorem, ipsum.
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span class="small grey text-left my">
+                                    Lorem ipsum dolor sit.
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span class="small grey text-left my">
+                                    Lorem, ipsum.
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <span class="small grey text-left my">
+                                    Lorem, ipsum dolor.
+                                </span>
+                            </li>
+                        </ul>
+                        <div
+                            class="links">
+                            <!-- Give a linkt to your project repository -->
+                            <a target="_blank" class="button btn" href="#!">
+                                Code</a>
+                            <!-- Givethe link tp your live project -->
+                            <a target="_blank" class="button btn" href="#!">
+                                Demo</a>
+                        </div>
+                    </div>
+                    <div
+                        data-tilt data-tilt-max="5" class="project-img">
+                        <!-- Link to deployed Project -->
+                        <a
+                            href="#!">
+                            <!-- Image of your Project -->
+                            <img src="pro3.jpg" alt=""/></a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- --------------Work Section------------------------------ -->
-    <section id="work" class="work my-2">
-      <div class="container">
-        <div style="margin-bottom: 80px;"></div>
-        <div class="heading my-3">
-          <div class="text">
-            <p class="large grey fw-600">
-              My work
-            </p>
-          </div>
-          <div class="h-holder">
-            <div class="line"></div>
-          </div>
-        </div>
-        <p
-          data-aos="fade-right"
-          data-aos-offset="300"
-          class="medium fw-600 text-left"
-        >
-          <!-- Project name -->
-          Project Name
-        </p>
-        <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          class="grid-2-work my-1"
-        >
-          <div class="project-data">
-            <p
-              data-aos="fade-right"
-              data-aos-offset="300"
-              class="small grey text-left my"
-            >
-              <!-- Project description in short -->
-              Project Description
-            </p>
-            <ul class="my-2">
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  <!-- Technology used to make project -->
-                  Lorem.
-                </span>
-              </li>
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  <!-- Technology used to make project -->
-                  Lorem, ipsum.
-                </span>
-              </li>
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  <!-- Technology used to make project -->
-                  Lorem ipsum dolor sit.
-                </span>
-              </li>
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  <!-- Technology used to make project -->
-                  Lorem, ipsum.
-                </span>
-              </li>
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  <!-- Technology used to make project -->
-                  Lorem, ipsum dolor.
-                </span>
-              </li>
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  Lorem ipsum dolor sit.
-                </span>
-              </li>
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  <!-- Technology used to make project -->
-                  Lorem ipsum dolor sit amet.
-                </span>
-              </li>
-            </ul>
-            <div class="links">
-              <!-- Give a linkt to your project repository -->
-              <a target="_blank" class="button btn" href="#!"> Code</a>
-              <!-- Givethe link tp your live project -->
-              <a target="_blank" class="button btn" href="#!"> Demo</a>
+        </section>
+        <!-- ---------------------------Footer------------------------------------>
+        <footer id="contact">
+            <div class="container footer">
+                <div data-aos="fade-zoom-in" data-aos-delay="300" data-aos-offset="300" class="contact text-center">
+                    <p class="large white fw-600">Contact</p>
+                    <p class="medium grey fw-600 my-2">
+                        <i class="fas fa-map-marker-alt mx-1"></i>
+                        <!-- Your contact here -->
+                        Lorem, ipsum dolor.
+                    </p>
+                    <p
+                        class="medium grey fw-600">
+                        <!-- Mesg for recruiter here -->
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti,
+                                    pariatur.
+                    </p>
+                    <!-- Your email id here -->
+                    <a class="button my-2" href="mailto:abc@gmail.com">Get In Touch</a>
+                    <div>
+                        <a class="last mx" href="#top">
+                            <i class="fas large fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-zoom-in" data-aos-delay="700" data-aos-offset="0" class="copyright">
+                    <div class="social-icons my-1">
+                        <ul>
+                            <li>
+                                <!-- Add the link to your social media account  -->
+                                <a
+                                    href="#!">
+                                    <!-- Give Your social media icon  -->
+                                    <i class="fab fa-facebook grey large"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- Add the link to your social media account  -->
+                                <a
+                                    href="#!">
+                                    <!-- Give Your social media icon  -->
+                                    <i class="fab grey fa-github large"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <i class="fab grey fa-twitter large"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <i class="fab grey fa-instagram large"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="small grey">
+                        Code and Design by Rajesh
+                    </p>
+                </div>
             </div>
-          </div>
-          <div data-tilt data-tilt-max="5" class="project-img">
-            <!-- Link to deployed Project -->
-            <a href="#!">
-              <!-- Image of your Project -->
-              <img src="pro1.jpg" alt=""
-            /></a>
-          </div>
-        </div>
-        <p
-          data-aos="fade-left"
-          data-aos-offset="300"
-          class="medium fw-600 text-left"
-        >
-          Project 2
-        </p>
-        <div
-          data-aos="fade-left"
-          data-aos-offset="400"
-          class="grid-2-work my-1"
-        >
-          <div class="project-data">
-            <p
-              data-aos="fade-left"
-              data-aos-offset="400"
-              class="small grey text-left my"
-            >
-              Project Name
-            </p>
-            <ul class="my-2">
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  Lorem.
-                </span>
-              </li>
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  Lorem, ipsum.
-                </span>
-              </li>
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  Lorem ipsum dolor sit.
-                </span>
-              </li>
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  Lorem, ipsum.
-                </span>
-              </li>
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  Lorem, ipsum dolor.
-                </span>
-              </li>
-            </ul>
-            <div class="links">
-              <!-- Give a linkt to your project repository -->
-              <a target="_blank" class="button btn" href="#!"> Code</a>
-              <!-- Givethe link tp your live project -->
-              <a target="_blank" class="button btn" href="#!"> Demo</a>
-            </div>
-          </div>
-          <div data-tilt data-tilt-max="5" class="project-img">
-            <!-- Link to deployed Project -->
-            <a href="#!">
-              <!-- Image of your Project -->
-              <img src="pro2.png" alt=""
-            /></a>
-          </div>
-        </div>
-        <p
-          data-aos="fade-right"
-          data-aos-offset="300"
-          class="medium fw-600 text-left"
-        >
-          Project 3
-        </p>
-        <div
-          data-aos="fade-right"
-          data-aos-offset="400"
-          class="grid-2-work my-1"
-        >
-          <div class="project-data">
-            <p
-              data-aos="fade-right"
-              data-aos-offset="400"
-              class="small grey text-left"
-            >
-              Project Name
-            </p>
-            <ul class="my-1">
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  Lorem.
-                </span>
-              </li>
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  Lorem, ipsum.
-                </span>
-              </li>
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  Lorem ipsum dolor sit.
-                </span>
-              </li>
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  Lorem, ipsum.
-                </span>
-              </li>
-              <li>
-                <i class="fas fa-chevron-circle-right"></i>
-                <span class="small grey text-left my">
-                  Lorem, ipsum dolor.
-                </span>
-              </li>
-            </ul>
-            <div class="links">
-              <!-- Give a linkt to your project repository -->
-              <a target="_blank" class="button btn" href="#!"> Code</a>
-              <!-- Givethe link tp your live project -->
-              <a target="_blank" class="button btn" href="#!"> Demo</a>
-            </div>
-          </div>
-          <div data-tilt data-tilt-max="5" class="project-img">
-            <!-- Link to deployed Project -->
-            <a href="#!">
-              <!-- Image of your Project -->
-              <img src="pro3.jpg" alt=""
-            /></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ---------------------------Footer------------------------------------>
-    <footer id="contact">
-      <div class="container footer">
-        <div
-          data-aos="fade-zoom-in"
-          data-aos-delay="300"
-          data-aos-offset="300"
-          class="contact text-center"
-        >
-          <p class="large white fw-600">Contact</p>
-          <p class="medium grey fw-600 my-2">
-            <i class="fas fa-map-marker-alt mx-1"></i>
-            <!-- Your contact here -->
-            Lorem, ipsum dolor.
-          </p>
-          <p class="medium grey fw-600">
-            <!-- Mesg for recruiter here -->
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti,
-            pariatur.
-          </p>
-          <!-- Your email id here -->
-          <a class="button my-2" href="mailto:abc@gmail.com">Get In Touch</a>
-          <div>
-            <a class="last mx" href="#top">
-              <i class="fas large fa-chevron-up"></i
-            ></a>
-          </div>
-        </div>
-        <div
-          data-aos="fade-zoom-in"
-          data-aos-delay="700"
-          data-aos-offset="0"
-          class="copyright"
-        >
-          <div class="social-icons my-1">
-            <ul>
-              <li>
-                <!-- Add the link to your social media account  -->
-                <a href="#!">
-                  <!-- Give Your social media icon  -->
-                  <i class="fab fa-facebook grey large"></i
-                ></a>
-              </li>
-              <li>
-                <!-- Add the link to your social media account  -->
-                <a href="#!">
-                  <!-- Give Your social media icon  -->
-                  <i class="fab grey fa-github large"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#!"><i class="fab grey fa-twitter large"></i></a>
-              </li>
-              <li>
-                <a href="#!"><i class="fab grey fa-instagram large"></i></a>
-              </li>
-            </ul>
-          </div>
-          <p class="small grey">
-            Code and Design by Rajesh
-          </p>
-        </div>
-      </div>
-    </footer>
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
-    <script>
-      var scroll = new SmoothScroll('a[href*="#"]', {
-        easing: "easeInOutQuint",
-      });
-    </script>
-    <script src="  https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    </script>
-    <script src="app.js"></script>
-  </body>
+        </footer>
+        <script src=" https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {easing: "easeInOutQuint"});
+        </script>
+        <script src="  https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({duration: 1000, once: true});
+        </script>
+        <script src="app.js"></script>
+    </body>
 </html>
