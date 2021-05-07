@@ -437,7 +437,7 @@ aside li {
 .footer {
   display: flex;
   flex-direction: column;
-  height: 88vh;
+  height: 70vh;
   align-items: center;
   justify-content: space-between;
 }
