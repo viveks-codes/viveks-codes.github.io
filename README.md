@@ -1,3 +1,3 @@
-
-
-
+- [Tilt.js](https://micku7zu.github.io/vanilla-tilt.js/) - Parallax effect
+- [Smooth-scroll](https://github.com/cferdinandi/smooth-scroll) -For smooth scroll
+- [Aniamte on Scroll](https://michalsnik.github.io/aos/) -For reveal on scroll
